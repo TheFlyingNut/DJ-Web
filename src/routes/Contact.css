@@ -1,0 +1,12 @@
+#scheduler {
+    height: 600px;
+    flex: auto;
+    border-radius: 15px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.bich{
+    padding-top: 200px;
+    color: rgb(39, 39, 187);
+}

@@ -1,0 +1,40 @@
+/* styles.css */
+.container {
+    padding: 4rem;
+    background:rgb(250, 233, 233);
+  }
+  
+  .form-container {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .card-container {
+    display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto
+  }
+  
+  .popup-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 1px solid black;
+  }
+  
+  .card-wrapper{
+    position: relative;
+    margin: 50px 0 45px;  
+  }
+
+  .cards-items{
+    color: rgb(48, 45, 41);
+    margin-bottom: 24px;
+
+  }
