@@ -1,11 +1,9 @@
-import Hero from "../components/Hero";
-import Navbar from "../components/Navbar";
-import AboutImg from "../assets/night.jpg";
-import Footer from "../components/Footer";
-import AboutUs from "../components/AboutUs";
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import CardItem from "../components/CardItem";
-import './About.css'
+import './About.css'; // Additional CSS for customization
+import Navbar from "../components/Navbar"; // Import Navbar component
 
 const About = () => {
   const [cards, setCards] = useState([]);
@@ -13,6 +11,7 @@ const About = () => {
   const [urlInput, setUrlInput] = useState('');
   const [imageInput, setImageInput] = useState('');
   const [descriptionInput, setDescriptionInput] = useState('');
+  const [showForm, setShowForm] = useState(false); // State to control form visibility
 
   const handleTextChange = (e) => {
     setTextInput(e.target.value);
@@ -45,6 +44,7 @@ const About = () => {
     setUrlInput('');
     setImageInput('');
     setDescriptionInput('');
+    setShowForm(false); // Hide the form after adding a card
   };
 
   const handleDeleteCard = (id) => {
@@ -52,25 +52,51 @@ const About = () => {
   };
 
   return (
-    <div className="container">
-      <div className="form-container">
-        <input type="text" placeholder="Enter text" value={textInput} onChange={handleTextChange} />
-        <input type="text" placeholder="Enter URL" value={urlInput} onChange={handleUrlChange} />
-        <input type="text" placeholder="Enter image URL" value={imageInput} onChange={handleImageChange} />
-        <input type="text" placeholder="Enter Description" value={descriptionInput} onChange={handleDescriptionChange} />
-        <button onClick={handleAddCard}>Add Card</button>
-      </div>
-      <div className="cards">
-        {cards.map((card) => (
-          <CardItem
-            key={card.id}
-            id={card.id}
-            image={card.image}
-            description={card.description}
-            url={card.url}
-            onDelete={handleDeleteCard}
-          />
-        ))}
+    <div>
+      <Navbar /> {/* Navbar always appears on top */}
+      <div className="container">
+        {showForm && (
+          <div className="popup">
+          <div className="formContainer">
+            <div className="formGroup">
+              <label htmlFor="text">Text:</label>
+              <input type="text" id="text" value={textInput} onChange={handleTextChange} />
+            </div>
+            <div className="formGroup">
+              <label htmlFor="url">URL:</label>
+              <input type="text" id="url" value={urlInput} onChange={handleUrlChange} />
+            </div>
+            <div className="formGroup">
+              <label htmlFor="image">Image URL:</label>
+              <input type="text" id="image" value={imageInput} onChange={handleImageChange} />
+            </div>
+            <div className="formGroup">
+              <label htmlFor="description">Description:</label>
+              <input type="text" id="description" value={descriptionInput} onChange={handleDescriptionChange} />
+            </div>
+            <div className="buttonGroup">
+              <button onClick={handleAddCard}>Add Card</button>
+              <button onClick={() => setShowForm(false)}>Close</button>
+            </div>
+          </div>
+        </div>
+        )}
+        <div className="cards">
+          {cards.map((card) => (
+            <div className="card" key={card.id}>
+            <CardItem
+              id={card.id}
+              image={card.image}
+              description={card.description}
+              url={card.url}
+              onDelete={handleDeleteCard}
+            />
+          </div>
+          ))}
+        </div>
+        <button className="addButton" onClick={() => setShowForm(true)}>
+          <FontAwesomeIcon icon={faPlus} />
+        </button>
       </div>
     </div>
   );

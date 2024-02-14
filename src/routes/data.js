@@ -45,5 +45,23 @@ export const appointments = [
         title: "Open Day",
         startDate: new Date("2021-05-27T09:30:00.000Z"),
         endDate: new Date("2021-05-27T19:00:00.000Z"),
-    }
+    },
+    {
+        text: "Meeting",
+        startDate: new Date(2021, 4, 25, 10, 0),
+        endDate: new Date(2021, 4, 25, 12, 0),
+        place: "Seminar Hall", // Add place information
+      },
+      {
+        text: "Conference",
+        startDate: new Date(2021, 4, 26, 14, 0),
+        endDate: new Date(2021, 4, 26, 16, 0),
+        place: "BJ Hall", // Add place information
+      },
+      {
+        text: "Presentation",
+        startDate: new Date(2021, 4, 27, 9, 0),
+        endDate: new Date(2021, 4, 27, 11, 0),
+        place: "Lobby", // Add place information
+      }
 ];
