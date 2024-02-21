@@ -15,11 +15,17 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@mui/icons-material": "^5.15.9",
     "@mui/material": "^5.15.9",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
     "devextreme": "23.2.4",
     "devextreme-react": "23.2.4",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.1.3",
     "mui": "^0.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-qr-reader": "^3.0.0-beta-1",
     "react-router-dom": "6.4.0",
     "react-scripts": "^5.0.1"
   },
@@ -39,5 +45,7 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "author": "",
+  "license": "ISC"
 }

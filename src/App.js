@@ -6,6 +6,7 @@ import About from "./routes/About";
 import Service from "./routes/Service";
 import Contact from "./routes/Contact";
 import Navbar from "./components/Navbar";
+import { BackgroundColor } from 'devextreme-react/cjs/chart';
 
 export default function App() {
   return (
