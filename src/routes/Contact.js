@@ -2,7 +2,7 @@ import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import AboutImg from "../assets/2.jpg";
 import Footer from "../components/Footer";
-import ContactForm from "../components/ContactForm";
+import ContactForm from "../components/ContactForm"; 
 import 'devextreme/dist/css/dx.light.css';
 import './Contact.css';
 
@@ -12,7 +12,7 @@ import { appointments } from './data.js';
 import { View, Editing } from 'devextreme-react/scheduler';
 
 function Contact() {
-  const [currentDate, setCurrentDate] = useState(new Date(2021, 4, 25));
+  const [currentDate, setCurrentDate] = useState(new Date());
   const [currentEventDescription, setCurrentEventDescription] = useState(null);
 
   const handlePropertyChange = (e) => {
@@ -38,7 +38,7 @@ function Contact() {
         currentDate={currentDate}
         onOptionChanged={handlePropertyChange}
         defaultCurrentView="week"
-        timeZone="Europe/Berlin"
+        timeZone="Asia/Kolkata"
         adaptivityEnabled={true}
         onAppointmentClick={handleEventClick} // Add event click handler
       >
@@ -46,7 +46,6 @@ function Contact() {
         <View type="week" startDayHour={10} endDayHour={22} />
         <View type="month" />
         <Editing allowDragging={false} />
-        <Editing allowTimeZoneEditing={true} />
       </Scheduler>
       {currentEventDescription && <div>Description: {currentEventDescription}</div>}
     </>
