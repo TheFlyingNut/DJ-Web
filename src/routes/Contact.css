@@ -10,3 +10,58 @@
     padding-top: 200px;
     color: rgb(39, 39, 187);
 }
+
+/* Contact.css */
+
+.scheduler-container {
+    padding-top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .scheduler {
+    width: 70%;
+    margin-right: 20px;
+  }
+  
+  .description-sidebar {
+    width: 30%;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .description-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px; /* Adjust width as needed */
+    height: 100%; /* Adjust height as needed */
+    background-color: #fff; /* Adjust background color as needed */
+    padding: 20px;
+    border-left: 1px solid #ccc; /* Add border to separate from scheduler */
+    z-index: 1000; /* Ensure the sidebar appears above other content */
+  }
+  
+  .description {
+    margin-bottom: 20px;
+  }
+  
+  .description h3 {
+    margin-bottom: 10px;
+  }
+  
+  .location-dropdown {
+    margin-top: 20px;
+  }
+  
+  .location-dropdown label {
+    margin-right: 10px;
+  }
+  
+  .location-dropdown select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  

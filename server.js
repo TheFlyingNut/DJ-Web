@@ -12,7 +12,7 @@ const app = express();
 app.use(bodyParser.json());
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/attendance', {
+mongoose.connect('mongodb+srv://kartiktornadus098:<password>@cluster0.pcmzvwt.mongodb.net/?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
