@@ -5,6 +5,7 @@ import Home from "./routes/Home";
 import About from "./routes/About";
 import Service from "./routes/Service";
 import Contact from "./routes/Contact";
+import Hero from './components/Hero';
 import Navbar from "./components/Navbar";
 import { BackgroundColor } from 'devextreme-react/cjs/chart';
 

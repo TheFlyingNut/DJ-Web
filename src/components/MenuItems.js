@@ -6,7 +6,7 @@ export const MenuItems = [
     icon : "fa-solid fa-house-user"
   },
   {
-    title : "BookMySpace",
+    title : "Events",
     url : "/About",
     cName : "nav-links",
     icon : "fa-regular fa-calendar"
@@ -18,7 +18,7 @@ export const MenuItems = [
     icon : "fa-solid fa-clipboard-user"
   }, 
   {
-    title : "Events",
+    title : "BookMySpace",
     url : "/Contact",
     cName : "nav-links",
     icon : "fa-solid fa-code"
