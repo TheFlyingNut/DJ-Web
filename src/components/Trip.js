@@ -13,7 +13,7 @@ function Trip() {
         <TripData
         image= {Trip1}
         heading = "DJS Trinity" 
-        text="Trinity embodies the spirit of D.J. Sanghvi as the most anticipated and cherished annual socio-cultural, sports festival. Trinity is coalescence of innovation and technology, festivities and social responsibilities and competitive streak of sports. The Grandeur of Trinity is sure to attract students not only from Mumbai but from colleges from all around the world."
+        text="lund. Trinity is coalescence of innovation and technology, festivities and social responsibilities and competitive streak of sports. The Grandeur of Trinity is sure to attract students not only from Mumbai but from colleges from all around the world."
         />
         <TripData
         image= {Trip2}

@@ -1,0 +1,62 @@
+.container-text-center {
+    text-align: center;
+    margin: 50px auto; /* Center the container horizontally */
+    max-width: 800px; /* Limit the width of the container */
+  }
+  
+  .title h1 { 
+    margin-top: 7rem;      
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .date-selector, .code-container, .or, .submit-form {
+    margin-top: 30px;
+  }
+  
+  .date-selector label {
+    font-size: 1.2rem;
+  }
+  
+  .date-selector .react-datepicker-wrapper {
+    display: inline-block; /* Adjust the date picker wrapper display */
+  }
+  
+  .code-container button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+  }
+  
+  .code-container .code {
+    font-size: 1.2rem;
+  }
+  
+  .or p {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .submit-form form {
+    margin-top: 20px;
+  }
+  
+  .submit-form input[type="text"], .submit-form button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #f0f0f0; /* Change the background color of input fields */
+  }
+  
+  .submit-form input[type="text"]::placeholder {
+    color: #aaa; /* Change the placeholder color */
+  }

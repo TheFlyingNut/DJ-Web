@@ -13,7 +13,7 @@ export const MenuItems = [
   }, 
   {
     title : "Attendence Tracking",
-    url : "/Service",
+    url : "/attendance",
     cName : "nav-links",
     icon : "fa-solid fa-clipboard-user"
   }, 

@@ -38,8 +38,8 @@ export const appointments = [
         recurrence: "FREQ=YEARLY",
     }, {
         title: "Monthly Planning",
-        startDate: new Date("2021-05-26T09:30:00.000Z"),
-        endDate: new Date("2021-05-26T10:45:00.000Z"),
+        startDate: new Date("2024-05-26T09:30:00.000Z"),
+        endDate: new Date("2024-05-26T10:45:00.000Z"),
         recurrence: "FREQ=MONTHLY;BYMONTHDAY=28;COUNT=1"
     }, {
         title: "Open Day",
